@@ -19,6 +19,6 @@
 
 ### Autor:
 - **Juan Manuel Impellizziere** - [jmidev.netlify.app](https://jmidev.netlify.app/)
-- **Deploy en Github Pages:** 
+- **Deploy en Github Pages:** - https://juanmanuel-dev.github.io/encriptador-de-texto/
 
 Este proyecto está bajo la licencia MIT.
