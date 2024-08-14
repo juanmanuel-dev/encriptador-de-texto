@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>
+
+    <!-- Favicons -->
+    <link href="src/icons/icon.png" rel="icon">
+
+    <!-- Css Stylesheet -->
+    <link type="text/css" href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header class="titulo">
+        <img class="titulo-logo" src="src/img/encripty-logo.png" alt="logo de Ecripty" >
+        <h1 class="titulo-texto">Encriptador de Texto</h1>
+    </header>
+
+    <main class="tablero">
+        
+        <section class="tablero-ingreso">
+            <textarea type="text" class="tablero-ingreso-texto" placeholder="Ingrese el texto aquí"></textarea>
+            <div class="mensaje-condicion">
+                <img class="tablero-ingreso-icono" src="src/icons/Group.png" alt="icono de exclamación">
+                <p id="mensaje-error" class="tablero-ingreso-mensaje-condicion">Solo letras minúsculas y sin acentos</p>
+            </div>
+            <div class="btn">
+                <button onclick="btnEncriptar()" id="btn-encriptar" class="tablero-ingreso-btn">Encriptar</button>
+                <button onclick="btnDesencriptar()" id="btn-desencriptar" class="tablero-ingreso-btn" disabled >Desencriptar</button>
+            </div>    
+        </section>
+
+        <aside class="tablero-resultado">
+            <img class="tablero-resultado-img" src="src/img/Muñeco.png"
+                alt="Dibujo de una persona arrodillada con una lupa en la mano mirando un diamante">
+            <h2 class="tablero-resultado-h2">Ningún mensaje fue encontrado</h2>
+            <p class="tablero-resultado-p">Ingrese el texto que desea encriptar o desencriptar.</p>
+            <button onclick="copiarTexto()" class="tablero-resultado-copiar-btn">Copiar</button>
+        </aside>
+        
+    </main>
+
+    <footer class="footer">
+
+        <p>Desarrollado por <a href="https://jmidev.netlify.app/">Juan Manuel Impellizziere</a>
+
+    </footer>
+
+    <script src="js/encriptar.js"></script>
+
+</body>
+
+</html>
